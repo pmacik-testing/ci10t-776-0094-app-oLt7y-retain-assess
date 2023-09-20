@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-krfh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0094-tenant/ci10t-776-0094-app/devfile-sample-krfh@sha256:56128b4a41fc4b1316eb3cfde70bee7fb7fdaec91af170cc010abd8acf1bfc38
+        name: my-nodejs
+        resources: {}
+status: {}
